@@ -1,0 +1,137 @@
+// forms
+
+.form-control {
+    &:focus {
+        box-shadow: 0 0 0 0.2rem $gray-100;
+    }
+}
+
+.input-group-text {
+    border-width: 0;
+    background: $gray-200;
+}
+
+// form blended
+
+.form-blend {
+    color: $light;
+
+    label {
+        color: white;
+    }
+    .form-control, .input-group-text {
+        border-color: rgba($dark, 0.2);
+    }
+
+    .form-control {
+        background: rgba($dark, 0.3);
+        color: $light;
+
+        &:disabled {
+            background: rgba($dark, 0.5);
+        }
+
+        &::placeholder {
+            color: rgba(white, 0.5);
+            font-weight: $font-weight-light;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba(white, 0.1);
+        }
+    }
+
+    .form-control.is-valid {
+        border-color: $success;
+    }
+
+    .form-control.is-invalid {
+        border-color: $danger;
+    }
+}
+
+.form-primary {
+    @extend .form-blend;
+
+    .input-group-text {
+        background: darken($primary, 10%);
+        color: white;
+    }
+
+    .form-control, .input-group-text {
+        border-color: darken($primary, 10%);
+    }
+
+    .form-control {
+        background: darken($primary, 5%);
+        color: $light;
+
+        &:disabled {
+            background: darken($primary, 10%);
+        }
+    }
+
+    .form-control.is-valid {
+        border-color: lighten($success, 15%);
+    }
+
+    .form-control.is-invalid {
+        border-color: lighten($danger, 10%);
+    }
+
+    .valid-feedback {
+        color: lighten($success, 15%)
+    }
+
+    .invalid-feedback {
+        color: lighten($danger, 10%)
+    }
+}
+
+.form-secondary {
+    @extend .form-primary;
+
+    .form-control, .input-group-text {
+        border-color: darken($secondary, 10%);
+    }
+
+    .input-group-text {
+        background: darken($secondary, 5%);
+    }
+
+    .form-control, .input-group-text {
+        border-color: darken($secondary, 5%);
+    }
+
+    .form-control {
+        background: darken($secondary, 3%);
+
+        &:disabled {
+            background: darken($secondary, 5%);
+        }
+    }
+}
+
+.form-success {
+    @extend .form-primary;
+
+    .form-control, .input-group-text {
+        border-color: darken($success, 10%);
+    }
+
+    .input-group-text {
+        background: darken($success, 5%);
+    }
+
+    .form-control, .input-group-text {
+        border-color: darken($success, 5%);
+    }
+
+    .form-control {
+        background: darken($success, 3%);
+
+        &:disabled {
+            background: darken($success, 5%);
+        }
+    }
+}

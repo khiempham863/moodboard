@@ -1,0 +1,147 @@
+// settings
+
+$enable-caret:              true !default;
+$enable-rounded:            true !default;
+$enable-shadows:            false !default;
+$enable-gradients:          false !default;
+$enable-transitions:        false !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
+
+// colors
+
+$white:         #ffffff;
+$gray-100:      #f5f9fb;
+$gray-200:      #e9ecef;
+$gray-300:      #dee2e6;
+$gray-400:      #ced4da;
+$gray-500:      #adb5bd;
+$gray-600:      #6c757d;
+$gray-700:      #495057;
+$gray-800:      #343a40;
+$gray-900:      #212529;
+$black:         #000000;
+
+$grays: ();
+$grays: map-merge((
+  "100":        $gray-100,
+  "200":        $gray-200,
+  "300":        $gray-300,
+  "400":        $gray-400,
+  "500":        $gray-500,
+  "600":        $gray-600,
+  "700":        $gray-700,
+  "800":        $gray-800,
+  "900":        $gray-900
+), $grays);
+
+$brand:             #359BF4;
+$brand-cyan:        #10BBAC;
+$brand-indigo:      #6772E5;
+$brand-light:       #F6F9FC;
+$brand-dark:        #32325D;
+
+$brand-colors: ();
+$brand-colors: map-merge((
+  "brand":              $brand,
+  "brand-cyan":         $brand-cyan,
+  "brand-indigo":       $brand-indigo,
+  "brand-light":        $brand-light,
+  "brand-dark":         $brand-dark,
+), $brand-colors);
+
+$blue:          #408AF8;
+$indigo:         $brand-indigo;
+$purple:        #b76ac4;
+$pink:          #E567A0;
+$red:           #E56767;
+$orange:        #F0A54F;
+$yellow:        #ffd600;
+$green:         #3ECF8E;
+$teal:          #1998d5;
+$cyan:           $brand-cyan;
+
+$primary:    $brand;
+$secondary:  $indigo;
+$success:    $cyan;
+$info:       $teal;
+$warning:    $yellow;
+$danger:     $red;
+$light:      $brand-light;
+$dark:       $brand-dark;
+$darker:     darken($dark, 5%);
+
+// background image
+
+$bg-images: (
+  'img-1',
+  'img-2',
+  'img-3',
+  'img-4',
+  'img-5',
+  'img-6',
+  'img-7',
+  'img-8',
+  'img-9',
+  'img-10',
+  'img-11',
+  'img-12',
+  'img-13',
+  'img-14',
+  'img-15',
+);
+
+// body
+
+$body-bg: $white;
+$body-color: $gray-700;
+
+// typography
+
+$font-weight-light:  100;
+$font-weight-normal: 300;
+$font-weight-bold:   700;
+
+$headings-font-weight: 700;
+$line-height-base: 1.5;
+
+// links
+
+$link-color:        $primary;
+$link-hover-color:  darken($link-color, 15%);
+
+// Components
+
+$line-height-lg:              1.5;
+$line-height-sm:              1.5;
+
+$border-width:                1px;
+$border-color:                $gray-300;
+
+$border-radius:               30px;
+$border-radius-lg:            .3rem;
+$border-radius-sm:            .2rem;
+
+// buttons
+
+$btn-padding-y: .55rem;
+$btn-padding-x: 2rem;
+
+$input-btn-padding-y:         .7rem;
+$input-btn-padding-x:         1rem;
+$input-btn-line-height:       $line-height-base;
+
+// forms
+
+$input-padding-y:             $input-btn-padding-y;
+$input-padding-x:             $input-btn-padding-x;
+$input-line-height:           $input-btn-line-height;
+
+$input-disabled-bg:           $gray-300;
+
+$input-color:                 $dark;
+$input-border-color:          $gray-200;
+
+$input-border-radius:         $border-radius;
+$input-border-radius-lg:      $border-radius-lg;
+$input-border-radius-sm:      $border-radius-sm;

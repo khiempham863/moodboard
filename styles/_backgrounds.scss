@@ -1,0 +1,14 @@
+@each $key, $value in $brand-colors {
+    .bg-#{$key} {
+        background-color: $value;
+    }
+}
+
+@each $image in $bg-images {
+    .bg-#{$image} {
+        background:
+            linear-gradient( rgba($dark, 0.7), rgba($dark, 0.9)),
+            url('../images/#{$image}.jpg') center center;
+        background-size: cover;
+    }
+  }
